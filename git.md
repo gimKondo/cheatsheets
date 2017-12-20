@@ -77,20 +77,22 @@
 	- `git add -u`
 
 ## clone
-- cloneでこんなエラーが出たときの対処
-    - 参考: https://qiita.com/cacahuatl/items/4d763e98f3934e3569ca
+### cloneでこんなエラーが出たときの対処
+- 参考: https://qiita.com/cacahuatl/items/4d763e98f3934e3569ca
 ```
 fatal: early EOF
 fatal: The remote end hung up unexpectedly
 fatal: index-pack failed
 ```
-    - 通信制限の緩和: `git config --global http.postBuffer 524288000`
-    - サーバ側の整理
+
+- 通信制限の緩和: `git config --global http.postBuffer 524288000`
+- サーバ側の整理
 ```sh
         git gc
         git repack -a -f -d --window=250 --depth=250
 ```
-    - cloneを小分けにする
+
+- cloneを小分けにする
 ```sh
         git clone --depth 1 <my_repo_URI>
         git fetch --unshallow
