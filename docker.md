@@ -23,6 +23,7 @@
     - 名前付き: `docker run --name NAME IMAGE`
     - バックグラウンド: `docker run -d IMAGE`
     - ポート転送: `docker run -p HOST_PORT:CONTAINER_PORT IMAGE`
+- コンテナの更新を取得: `docker pull IMAGE_NAME`
 
 ## docker-compose
 - 起動: `docker-compose start`
