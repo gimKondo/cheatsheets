@@ -61,6 +61,10 @@
 	- 補足: 直訳的に解説すると、空を`<ブランチ名>`に置き換える、という感じ
 
 ## スタッシュ
+- unstageファイルをスタッシュ
+	`git stash -k`
+- unstageファイルも含めてすべてスタッシュ
+	`git stash -u`
 - スタッシュの一覧
 	`git stash list`
 - スタッシュのdiff表示
@@ -71,6 +75,11 @@
 	`git stash pop stash@{n}`
 - 指定のスタッシュの取得(スタッシュリストから削除しない)
 	`git stash apply stash@{n}`
+- スタッシュの1件削除
+    `git stash drop` # 最新を削除
+    `git stash drop stash@{n}` # N番目を削除
+- スタッシュの全削除
+    `git stash clear`
 
 ## add
 - 更新ファイルのみadd
