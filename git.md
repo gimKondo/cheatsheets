@@ -52,6 +52,8 @@
 	`git merge --squash branch_name`
 - マージの取り消し(直前のコミットまでリセットしてるだけ)
 	`git reset --hard ORIG_HEAD`
+- マージの中止(`branch名|MERGING`となってるときに中止)
+    `git merge --abort`
 
 ## ブランチ
 - ブランチ名変更(カレントブランチを変更)
