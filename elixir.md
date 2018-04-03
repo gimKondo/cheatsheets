@@ -3,6 +3,14 @@
 - 式の終了: `#iex:break`
     - 複数行の式の入力を中止したくなったときに使う
 
+## inspect
+- ラベル付きinspect
+```
+a_map = %{a: 1, b: 2}
+IO.inspect a_map, label: "SAMPLE"
+# => SAMPLE: %{a: 1, b: 2}
+```
+
 ## Phoenix
 ### mix
 #### 一般
