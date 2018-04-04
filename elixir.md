@@ -10,6 +10,13 @@ a_map = %{a: 1, b: 2}
 IO.inspect a_map, label: "SAMPLE"
 # => SAMPLE: %{a: 1, b: 2}
 ```
+- 整数リストが文字リストとして出力されるのを抑止
+```
+> IO.inspect [101, 105]
+'ei'
+> IO.inspect [101, 105], charlists: :as_lists
+[101, 105]
+```
 
 ## Phoenix
 ### mix
