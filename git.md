@@ -87,6 +87,10 @@
 - 更新ファイルのみadd
 	- `git add -u`
 
+## config
+- どのファイルで設定されているか確認
+    - `git config --show-origin -l`
+
 ## clone
 ### cloneでこんなエラーが出たときの対処
 - 参考: https://qiita.com/cacahuatl/items/4d763e98f3934e3569ca
