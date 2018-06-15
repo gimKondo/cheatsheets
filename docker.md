@@ -25,6 +25,16 @@
     - ポート転送: `docker run -p HOST_PORT:CONTAINER_PORT IMAGE`
 - コンテナの更新を取得: `docker pull IMAGE_NAME`
 
+## 一括削除系
+- 出所: https://qiita.com/boiyaa/items/9972601ffc240553e1f3
+- 停止コンテナ、タグ無しイメージ、未使用ボリューム、未使用ネットワーク: `docker system prune`
+- 停止コンテナ: `docker container prune`
+- 全コンテナ: ``docker rm -f `docker ps -a -q` ``
+- 未使用イメージ: `docker image prune`
+- タグなしイメージ: `` docker rmi `docker images -f "dangling=true" -q` ``
+- 未使用ボリューム: `docker volume prune`
+- 未使用ネットワーク: `docker network prune`
+
 ## docker-compose
 - 起動: `docker-compose start`
 - 停止: `docker-compose stop`
