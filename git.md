@@ -42,8 +42,11 @@
 - 後からタグ付け: `git tag -a v1.5 -m 'important change' 9fceb02`
 - タグの共有(特定のタグ): `git push origin v1.5`
 - タグの共有(すべてのタグ): `git push origin --tags`
-- タグの削除: `git tag -d TAGNAME`
-- タグのリモートからの削除: `git push --delete origin TAGNAME` ／ `git push origin :TAGNAME`
+- タグの削除: `git tag -d TAG_NAME`
+- タグのリモートからの削除: `git push --delete origin TAG_NAME` ／ `git push origin :TAG_NAME`
+- タグにチェックアウト
+    - ブランチを作る場合: `git checkout -b BRANCH_NAME refs/tags/TAG_NAME`
+    - ブランチを作らない場合: `git checkout refs/tags/TAG_NAME`
 
 ## マージ
 - コミットなしでマージ(※ブランチ側のコミットを残す版)
