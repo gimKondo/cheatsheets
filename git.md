@@ -120,6 +120,10 @@ fatal: index-pack failed
         git fetch --unshallow
 ```
 
+## 設定
+- 環境内すべてのリポジトリに適用したいignore
+    - `~/.config/git/ignore` に.gitignoreと同じ形式で記述
+
 ## その他
 - コミットなしでチェリーピック
 	`git cherry-pick -n <hash>`
