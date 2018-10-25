@@ -1,5 +1,13 @@
 # DB2
 ## CUIコマンド
+- SQLファイルを実行: `db2 -tvf ファイルパス`
+    - t: ステートメント終了文字を設定
+    - f: ファイルから入力
+    - v: 現行コマンドをエコー
+
+## CUIコマンド(インタラクティブモード)
+- `db2` で開始
+- コマンドオプション一覧: `list command options`
 - DB一覧: `list db directory`
 - DBに接続: `connect to DB名`
 - テーブル一覧: `list tables`
