@@ -48,6 +48,9 @@
     - ブランチを作る場合: `git checkout -b BRANCH_NAME refs/tags/TAG_NAME`
     - ブランチを作らない場合: `git checkout refs/tags/TAG_NAME`
 
+## コミット
+- authorを一時的に指定: `git commit --author='John Smith <john@example.com>'`
+
 ## マージ
 - コミットなしでマージ(※ブランチ側のコミットを残す版)
 	`git merge -no-commit branch_name`
