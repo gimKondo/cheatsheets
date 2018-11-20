@@ -12,6 +12,8 @@
 - DBに接続: `connect to DB名`
 - テーブル一覧: `list tables`
 - テーブル定義表示: `describe table テーブル名`
+- 主キー確認: `select * from syscat.keycoluse where tabname = 'テーブル名'`
+- インデクス確認: `select tabname, indname, colnames from syscat.indexes where tabname = 'テーブル名'`
 - エクスポート: `EXPORT TO /tmp/test.ixf OF 形式 MESSAGES /tmp/test.log SELECT * FROM xml_test`
     - 形式
         - DEL: CSV形式
