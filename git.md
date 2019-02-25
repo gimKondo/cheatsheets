@@ -32,6 +32,9 @@
 	`git log --no-merges`
 - マージコミットのマージ元を非表示
 	`git log --first-parent`
+- ブランチ間のコミット差分を表示
+    - `git log --no-merges [比較元ブランチ名]..[比較先ブランチ名]`
+    - カレントブランチと比較: `git log --no-merges ..[比較先ブランチ名]`
 
 ## タグ
 - 一覧: `git tag`
