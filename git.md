@@ -128,6 +128,23 @@ fatal: index-pack failed
         git fetch --unshallow
 ```
 
+## remote
+- httpsでクローンしたリポジトリをsshでpush/pullするように変更
+- 確認: リモートリポジトリがhttpsで指定されている
+```
+> git remote -v
+origin  https://github.com/gimKondo/cheatsheets.git (fetch)
+origin  https://github.com/gimKondo/cheatsheets.git (push)
+```
+- sshでの指定に変更
+    - `git remote set-url origin git@github.com:gimKondo/cheatsheets.git`
+- 確認: sshで指定されるようになっている
+```
+> git remote -v
+origin  git@github.com:gimKondo/cheatsheets.git (fetch)
+origin  git@github.com:gimKondo/cheatsheets.git (push)
+```
+
 ## 設定
 - 環境内すべてのリポジトリに適用したいignore
     - `~/.config/git/ignore` に.gitignoreと同じ形式で記述
