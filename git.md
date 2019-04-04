@@ -101,6 +101,9 @@
 ## config
 - どのファイルで設定されているか確認
     - `git config --show-origin -l`
+- 特定のリポジトリのみでname, emailを変更
+    - `git config --local user.name 名前`
+    - `git config --local user.email "メールアドレス"`
 
 ## clone
 ### cloneでこんなエラーが出たときの対処
