@@ -53,3 +53,4 @@
 - セッションを終了				: `tmux kill-session`
 	- ※-t <対象セッション名>でセッション名の指定も可能
 - tmux全体を終了				: `tmux kill-server`
+- 設定の反映                    : `tmux source ~/.tmux.conf`
